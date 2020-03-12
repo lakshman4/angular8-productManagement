@@ -1,0 +1,19 @@
+.margin-bottom-add {
+    margin-bottom: 10px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    color:#8AAAE5 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    background-color: #8AAAE5 !important;;
+}
+
+mat-form-field {
+    width: 100%
+}
+
+mat-card {
+    margin-bottom: 30px !important;
+}

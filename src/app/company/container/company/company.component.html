@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row margin-bottom-add">
+        <div class="col-md-12 text-center">
+            <h3>Add Wama Details</h3>
+        </div>
+    </div>
+    <form [formGroup] ="company" (ngSubmit) = "onSubmit()">
+        <mat-card class="margin-bottom-add">
+            <div class="row margin-bottom-add">
+                <div class="col-md-12">
+                    <b>Wama Details</b>
+                </div>
+            </div>
+            <div class="row margin-bottom-add">
+                <div class="col-md-12">
+                    
+                    <div class="col-md-offset-1 col-md-5">
+                        <mat-form-field >
+                            <input matInput placeholder="Name" formControlName="name">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-offset-1 col-md-5">
+                        <mat-form-field >
+                            <input matInput placeholder="GST" formControlName="gst">
+                        </mat-form-field >
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+        <app-companyaddress formControlName="address"></app-companyaddress>
+        <app-companyowner formControlName = "owner"></app-companyowner>
+        <mat-card class="margin-bottom-add">
+            <div class="row" *ngIf="!save">
+                <div class="col-md-12 text-right" >
+                    <button mat-raised-button *ngIf="!edit" type="submit" [disabled]="company.invalid">Submit Wama</button>
+                    <button mat-raised-button *ngIf="edit" (click)="enableFields()">Edit Wama</button>
+                </div>
+            </div>
+            <div class="row" *ngIf="save">
+                <div class="col-md-12">
+                    <div class="col-md-offset-9 col-md-1">
+                        <button mat-raised-button type="button" (click)="resetCompany()">Cancel</button>
+                    </div>
+                    <div class="col-md-1">
+                        <button mat-raised-button type="button" (click)="updateCompany()" [disabled]="company.invalid">Save Wama</button>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </form>
+</div>

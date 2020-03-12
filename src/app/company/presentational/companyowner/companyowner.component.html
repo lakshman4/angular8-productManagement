@@ -1,0 +1,51 @@
+<ng-container [formGroup]="ownerForm">
+  <mat-card class="margin-bottom-add">
+    <div class="row margin-bottom-add">
+        <div class="col-md-12">
+            <b>Owner Details</b>
+        </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <div class="col-md-12">
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Full Name" formControlName="firstname" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Last Name" formControlName="lastname" >
+          </mat-form-field >
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <div class="col-md-12">
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Phone" formControlName="phone" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Email" formControlName="email" >
+          </mat-form-field >
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <div class="col-md-12">
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Id Proof Type" formControlName="idtype" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Id Proof Value" formControlName="idvalue" >
+          </mat-form-field >
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</ng-container>

@@ -1,0 +1,28 @@
+.header {
+    background-color: #8AAAE5;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 2;
+    position: fixed;
+}
+
+.header span {
+    margin: 0 auto;
+}
+
+mat-sidenav {
+    width: 15% !important;
+    background-color: #8AAAE5;
+    color: #FFFFFF;
+}
+
+mat-sidenav a, mat-sidenav h2 {
+    color: #FFFFFF;
+}
+
+.active {
+    background: #FFFFFF !important;
+    color: #333333 !important;
+}
+

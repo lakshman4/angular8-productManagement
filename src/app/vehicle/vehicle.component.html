@@ -1,0 +1,42 @@
+<form [formGroup] ="profileForm" (ngSubmit) = "saveVehicle()">
+  <mat-card class="margin-bottom-add">
+      <div class="row margin-bottom-add">
+          <div class="col-md-12">
+              <b>Product Details</b>
+          </div>
+      </div>
+      <div class="row margin-bottom-add">
+        <div class="col-md-12">
+          <div class="col-md-offset-1 col-md-5">
+            <label>Product Name</label>
+            <mat-form-field >
+                <input matInput placeholder="Product Name" formControlName="name" >
+            </mat-form-field>
+          </div>
+          <div class="col-md-offset-1 col-md-5">
+            <label>Product Price:</label>
+            <mat-form-field >
+            <input matInput placeholder="Price" formControlName="price" >
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-add">
+        <div class="col-md-12">
+          <div class="col-md-offset-1 col-md-5">
+            <label>Product model:</label>
+            <mat-form-field >
+                <input matInput placeholder="model" formControlName="model" >
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-add">
+          <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-11 text-right">
+      <button type="submit" class="btn btn-primary">Add Product</button>
+      </div>
+      </div>
+      </div>
+    </mat-card>
+</form>

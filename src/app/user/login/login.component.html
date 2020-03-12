@@ -1,0 +1,39 @@
+
+<div class="col-md-4 col-md-offset-4 login-container">
+  <mat-card>
+    <div class="text-center margin-bottom-add margin-top-add" >
+      <span class="glyphicon glyphicon-user"></span>
+    </div>
+    <div class="row margin-bottom-add">
+        <div class="col-md-12 text-center">
+            <b>Login</b>
+        </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <form [formGroup] ="userForm" (ngSubmit) = "saveUser()">
+        <div class="col-md-12">
+            <div class="col-md-offset-1 col-md-10 margin-bottom-add">
+                <mat-form-field >
+                    <input matInput placeholder="Email" formControlName="email">
+                </mat-form-field>
+            </div>
+            <div class="col-md-offset-1 col-md-10 margin-bottom-add">
+                <mat-form-field >
+                    <input matInput placeholder="Password" formControlName="password">
+                </mat-form-field >
+            </div>
+            <div class="col-md-offset-1 col-md-10 margin-bottom-add  text-right">
+              <button mat-raised-button type="submit" [disabled]="userForm.invalid">Submit Wama</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </mat-card>
+</div>
+
+
+
+
+
+    
+    

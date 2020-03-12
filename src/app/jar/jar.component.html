@@ -1,0 +1,27 @@
+<div class="header">
+  <h3>Lakshmiah</h3>
+</div>
+<div class="container-fluid div-margin">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Product Name</th>
+      <th>Product Price</th>
+      <th>Product Model</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td class="hidden"></td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.model}}</td>
+      <td><button class="btn btn-danger" (click)="deleteProduct(product)"> Delete</button>
+        <button class="btn btn-success" (click)="editProduct(product)"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+

@@ -1,0 +1,51 @@
+<ng-container [formGroup]="addressForm">
+  <mat-card class="margin-bottom-add">
+    <div class="row margin-bottom-add">
+        <div class="col-md-12">
+            <b>Address</b>
+        </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <div class="col-md-12">
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Line1" formControlName="line1" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Line2" formControlName="line2" >
+          </mat-form-field >
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <div class="col-md-12">
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="City" formControlName="city" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="State" formControlName="state" >
+          </mat-form-field >
+        </div>
+      </div>
+    </div>
+    <div class="row margin-bottom-add">
+      <div class="col-md-12">
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="PIN Code" formControlName="pincode" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <mat-form-field >
+              <input matInput placeholder="Country" formControlName="country" >
+          </mat-form-field >
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</ng-container>

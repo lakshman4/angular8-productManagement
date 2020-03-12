@@ -1,0 +1,54 @@
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <div class='navbar-header'>
+          <button type='button' class="navbar-toggle collapsed" data-toggle="collapse" data-target='#topnav' aria-expanded='false'>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href="#">Upaani</a>
+      </div>
+      <div class='collapse navbar-collapse' id='topnav'>
+          <ul class='nav navbar-nav navbar-right'>
+              <li>
+                  <a routerLink="">
+                      <span class='glyphicon glyphicon-home' aria-hidden='true'></span>&nbsp; Home
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="addcompany">
+                      <span class='glyphicon glyphicon-plus' aria-hidden='true'></span>&nbsp; Add New Company
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav> -->
+
+<mat-toolbar class="header">
+    <span>UpaaniLAKKKSS</span>
+</mat-toolbar>
+<mat-sidenav-container >
+    <mat-sidenav  mode="side"
+                opened="true"
+                [fixedInViewport]="true"
+                [fixedTopGap]="60" >
+        <mat-nav-list>
+
+            <h2 matSubheader> Profile</h2>
+            <a *ngFor="let item of myWorkRoutes"
+                mat-list-item
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+                [routerLink]="[item.route]">
+                <mat-icon matListIcon> {{ item.icon }} </mat-icon>
+                {{item.title}}
+            </a>
+            <br>
+            <mat-divider></mat-divider>
+            </mat-nav-list>
+    </mat-sidenav>
+    <ng-content>
+
+    </ng-content>
+</mat-sidenav-container>
